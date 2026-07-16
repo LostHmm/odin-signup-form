@@ -1,0 +1,170 @@
+:root {
+    --panel-gap: 60px;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url(assets/fonts/Norsebold.otf) format("opentype");
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("assets/images/odin_signup.jpg");
+    background-size: 128%;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    height: 125vh;
+    min-width: 37%;
+    gap: 12px;
+    padding: 296px 0px 16px 0;
+    align-items: center;
+    color: white;
+}
+
+.left-panel-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 198px;
+    width: 100%;
+    justify-content: center;
+}
+
+.odin-logo {
+    width: 126px;
+    height: fit-content;
+}
+
+.odin-text {
+    font-family: "Norse", sans-serif;
+    font-size: 126px;
+}
+
+.credit {
+    font-size: 18px;
+    font-weight: 1;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.intro-container {
+    width: 100%;
+    padding: 200px 220px 52px 60px;
+    box-sizing: border-box;
+}
+
+.intro {
+    font-size: 20px;
+    transform: scaleY(1.1);
+    margin-bottom: 36px;
+    width: 100%;
+}
+
+.intro h2 {
+    margin-bottom: 36px;
+}
+
+.form-header {
+    font-size: 20px;
+    padding-bottom: 12px;
+    transform: scaleY(1.1);
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 36px 96px;
+    padding-right: 48px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input {
+    width: 340px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+.form-body {
+    padding-left: var(--panel-gap);
+    margin-bottom: 12px;
+    padding-bottom: 40px;
+    padding-top: 12px;
+    box-shadow: 0 4px 10px rgb(205, 205, 205);
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(54, 54, 54);
+}
+
+.submit {
+    margin-top: 36px;
+    padding-left: var(--panel-gap);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 68px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 10px rgb(189, 189, 189);
+}
+
+.login {
+    color: #596D48;
+}
+
+.source:link {
+    color: white;
+}
+
+.source:visited {
+    color: #d6d6d6;
+}
+
+.source:hover {
+    color: #bababa;
+}
+.source:active {
+    color: white;
+}
